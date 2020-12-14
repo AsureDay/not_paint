@@ -101,6 +101,7 @@ namespace drowing_lines_and_other_things
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.SystemColors.Desktop;
             this.Controls.Add(this.resizebutt);
             this.Controls.Add(this.change_brush_butt);
@@ -110,8 +111,10 @@ namespace drowing_lines_and_other_things
             this.Controls.Add(this.paper);
             this.DoubleBuffered = true;
             this.HelpButton = true;
+            this.KeyPreview = true;
             this.Name = "mainForm";
             this.Load += new System.EventHandler(this.mainForm_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.mainForm_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.paper)).EndInit();
             this.ResumeLayout(false);
 

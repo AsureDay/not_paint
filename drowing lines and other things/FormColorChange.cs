@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace drowing_lines_and_other_things
 {
@@ -16,8 +11,6 @@ namespace drowing_lines_and_other_things
         private int red;
         private int green;
         private int blue;
-
-
 
         private bool hexLastChanged = false;
         private bool rgbLastChanged = false;
